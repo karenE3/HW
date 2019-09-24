@@ -1,11 +1,7 @@
 from django.shortcuts import render
-
 from rest_framework import viewsets
 from landing.models import Heroi, Universo, Arq_vilao, Habilidade
-from landing.serializers import UniversoSerializer, HeroiSerializer, HabilidadeSerializer, Arq_vilaoSerializer
-
-
-# Create your views here.
+from landing.serializer import HabilidadeSerializer, Arq_vilaoSerializer
 
 
 class HeroiViewSet(viewsets.ModelViewSet):
